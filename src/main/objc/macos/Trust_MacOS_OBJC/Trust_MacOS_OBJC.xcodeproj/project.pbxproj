@@ -10,6 +10,8 @@
 		1D601A101F65404C00DD1E40 /* Trust_MacOS_OBJC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D601A061F65404C00DD1E40 /* Trust_MacOS_OBJC.framework */; };
 		1D601A151F65404C00DD1E40 /* Trust_MacOS_OBJCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D601A141F65404C00DD1E40 /* Trust_MacOS_OBJCTests.m */; };
 		1D601A171F65404C00DD1E40 /* Trust_MacOS_OBJC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D601A091F65404C00DD1E40 /* Trust_MacOS_OBJC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D601A231F65A28700DD1E40 /* OC_TMO_Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D601A211F65A28700DD1E40 /* OC_TMO_Globals.h */; };
+		1D601A241F65A28700DD1E40 /* OC_TMO_Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D601A221F65A28700DD1E40 /* OC_TMO_Globals.m */; };
 		7259C08B9F17BA7ACD4D60D9 /* Pods_Trust_MacOS_OBJC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE24AB5478521A919454C0C /* Pods_Trust_MacOS_OBJC.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		1D601A0F1F65404C00DD1E40 /* Trust_MacOS_OBJCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Trust_MacOS_OBJCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D601A141F65404C00DD1E40 /* Trust_MacOS_OBJCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trust_MacOS_OBJCTests.m; sourceTree = "<group>"; };
 		1D601A161F65404C00DD1E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D601A211F65A28700DD1E40 /* OC_TMO_Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OC_TMO_Globals.h; sourceTree = "<group>"; };
+		1D601A221F65A28700DD1E40 /* OC_TMO_Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OC_TMO_Globals.m; sourceTree = "<group>"; };
 		64D00211CD268AFE3962FBC8 /* Pods-Trust_MacOS_OBJC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trust_MacOS_OBJC.release.xcconfig"; path = "../../../../../Pods/Target Support Files/Pods-Trust_MacOS_OBJC/Pods-Trust_MacOS_OBJC.release.xcconfig"; sourceTree = "<group>"; };
 		DFE24AB5478521A919454C0C /* Pods_Trust_MacOS_OBJC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trust_MacOS_OBJC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31DBAA9A49C5F7E2A266EDE /* Pods-Trust_MacOS_OBJC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trust_MacOS_OBJC.debug.xcconfig"; path = "../../../../../Pods/Target Support Files/Pods-Trust_MacOS_OBJC/Pods-Trust_MacOS_OBJC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 		1D601A081F65404C00DD1E40 /* Trust_MacOS_OBJC */ = {
 			isa = PBXGroup;
 			children = (
+				1D601A201F65A1D400DD1E40 /* Public */,
 				1D601A091F65404C00DD1E40 /* Trust_MacOS_OBJC.h */,
 				1D601A0A1F65404C00DD1E40 /* Info.plist */,
 			);
@@ -91,6 +96,15 @@
 				1D601A161F65404C00DD1E40 /* Info.plist */,
 			);
 			path = Trust_MacOS_OBJCTests;
+			sourceTree = "<group>";
+		};
+		1D601A201F65A1D400DD1E40 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				1D601A211F65A28700DD1E40 /* OC_TMO_Globals.h */,
+				1D601A221F65A28700DD1E40 /* OC_TMO_Globals.m */,
+			);
+			name = Public;
 			sourceTree = "<group>";
 		};
 		7A8DE446F7CE9CF7C4597366 /* Pods */ = {
@@ -117,6 +131,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D601A231F65A28700DD1E40 /* OC_TMO_Globals.h in Headers */,
 				1D601A171F65404C00DD1E40 /* Trust_MacOS_OBJC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D601A241F65A28700DD1E40 /* OC_TMO_Globals.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +477,7 @@
 				1D601A1C1F65404C00DD1E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D601A1D1F65404C00DD1E40 /* Build configuration list for PBXNativeTarget "Trust_MacOS_OBJCTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +486,7 @@
 				1D601A1F1F65404C00DD1E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
