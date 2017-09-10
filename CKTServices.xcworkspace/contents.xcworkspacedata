@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:src/main/objc/macos/Trust/Trust.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:src/main/objc/macos/Cert/Cert.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:src/main/objc/macos/Key/Key.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
