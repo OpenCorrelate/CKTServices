@@ -10,6 +10,7 @@
 		1D6019C81F65400B00DD1E40 /* Key_MacOS_OBJC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6019BE1F65400B00DD1E40 /* Key_MacOS_OBJC.framework */; };
 		1D6019CD1F65400B00DD1E40 /* Key_MacOS_OBJCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6019CC1F65400B00DD1E40 /* Key_MacOS_OBJCTests.m */; };
 		1D6019CF1F65400B00DD1E40 /* Key_MacOS_OBJC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6019C11F65400B00DD1E40 /* Key_MacOS_OBJC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68E2DD5ADA93A5C0BBFF3E9C /* Pods_Key_MacOS_OBJC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74389C156FDD64F98621A459 /* Pods_Key_MacOS_OBJC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,9 @@
 		1D6019C71F65400B00DD1E40 /* Key_MacOS_OBJCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Key_MacOS_OBJCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D6019CC1F65400B00DD1E40 /* Key_MacOS_OBJCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Key_MacOS_OBJCTests.m; sourceTree = "<group>"; };
 		1D6019CE1F65400B00DD1E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74389C156FDD64F98621A459 /* Pods_Key_MacOS_OBJC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Key_MacOS_OBJC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88997C42BA81F92923BEFE43 /* Pods-Key_MacOS_OBJC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Key_MacOS_OBJC.release.xcconfig"; path = "../../../../../Pods/Target Support Files/Pods-Key_MacOS_OBJC/Pods-Key_MacOS_OBJC.release.xcconfig"; sourceTree = "<group>"; };
+		BECB142D7B6287B02610EBE3 /* Pods-Key_MacOS_OBJC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Key_MacOS_OBJC.debug.xcconfig"; path = "../../../../../Pods/Target Support Files/Pods-Key_MacOS_OBJC/Pods-Key_MacOS_OBJC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E2DD5ADA93A5C0BBFF3E9C /* Pods_Key_MacOS_OBJC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 				1D6019C01F65400B00DD1E40 /* Key_MacOS_OBJC */,
 				1D6019CB1F65400B00DD1E40 /* Key_MacOS_OBJCTests */,
 				1D6019BF1F65400B00DD1E40 /* Products */,
+				BF439343858E5E7276CBBA8C /* Pods */,
+				E17A243E1D3BCDDCD42A6DCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +93,23 @@
 			path = Key_MacOS_OBJCTests;
 			sourceTree = "<group>";
 		};
+		BF439343858E5E7276CBBA8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BECB142D7B6287B02610EBE3 /* Pods-Key_MacOS_OBJC.debug.xcconfig */,
+				88997C42BA81F92923BEFE43 /* Pods-Key_MacOS_OBJC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E17A243E1D3BCDDCD42A6DCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74389C156FDD64F98621A459 /* Pods_Key_MacOS_OBJC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,10 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6019D21F65400B00DD1E40 /* Build configuration list for PBXNativeTarget "Key_MacOS_OBJC" */;
 			buildPhases = (
+				408B0B710E5E989739DD7150 /* [CP] Check Pods Manifest.lock */,
 				1D6019B91F65400B00DD1E40 /* Sources */,
 				1D6019BA1F65400B00DD1E40 /* Frameworks */,
 				1D6019BB1F65400B00DD1E40 /* Headers */,
 				1D6019BC1F65400B00DD1E40 /* Resources */,
+				7893C2006DAD4ACACDD16EC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +217,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		408B0B710E5E989739DD7150 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Key_MacOS_OBJC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7893C2006DAD4ACACDD16EC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../../../../Pods/Target Support Files/Pods-Key_MacOS_OBJC/Pods-Key_MacOS_OBJC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D6019B91F65400B00DD1E40 /* Sources */ = {
@@ -316,6 +378,7 @@
 		};
 		1D6019D31F65400B00DD1E40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BECB142D7B6287B02610EBE3 /* Pods-Key_MacOS_OBJC.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -336,6 +399,7 @@
 		};
 		1D6019D41F65400B00DD1E40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88997C42BA81F92923BEFE43 /* Pods-Key_MacOS_OBJC.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
